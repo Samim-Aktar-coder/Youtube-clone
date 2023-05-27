@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./youtube-img/youtube-logo.png" type="image/x-icon">
+
+    <!--!========= REMIX ICONS =============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--!========= BOOTSTRAP ICONS =============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!--!========= UNI ICONS =============-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!--!=========CUSTOM CSS========= -->
+    <link rel="stylesheet" href="./Youtube.css">
+    <!--!=========CUSTOM JS========= -->
+    <script src="./Youtube.js" defer></script>
+
+    <title>Youtube</title>
+</head>
+
+<body>
+
+    <!--!========= NAVBAR =========-->
+
+    <header>
+
+        <nav class="navbar">
+            <div class="nav__logo flex-center">
+                <i class="ri-menu-line menu-bar flex-center" id="menu-bar"></i>
+                <div class="logo flex-center">
+                    <img src="./youtube-img/youtube-logo.png" alt="">
+                    <img src="./youtube-img/youtube-word-logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="search__container flex-center">
+                <div class="search__bar flex-center">
+                    <input type="text" placeholder="Search">
+                    <i class="ri-search-line"></i>
+                </div>
+                <i class="ri-mic-fill mic-icon"></i>
+            </div>
+
+            <div class="nav__icons flex-center">
+                <i class="ri-video-add-line"></i>
+                <i class="bi bi-bell"></i>
+                <i class="ri-search-line search-icon"></i>
+                <img src="./youtube-img/my-profile.jpg" class="my-profile">
+            </div>
+        </nav>
+
+        <div class="mini__menu" id="mini-menu">
+            <div class="menu__item">
+                <img src="./youtube-img/home-icon.png" alt="">
+                <p>Home</p>
+            </div>
+            <div class="menu__item">
+                <img src="./youtube-img/shorts-icon.png" alt="">
+                <p>Shorts</p>
+            </div>
+            <div class="menu__item">
+                <img src="./youtube-img/subscription-icon.png" alt="">
+                <p>Subscription</p>
+            </div>
+            <div class="menu__item">
+                <img src="./youtube-img/library-icon.png" alt="">
+                <p>Library</p>
+            </div>
+        </div>
+
+        <div class="main__menu" id="main-menu">
+
+            <div class="menu-box-1">
+                <div class="menu__item active">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/home-icon.png" alt="">
+                    </div>
+                    <p>Home</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/shorts-icon.png" alt="">
+                    </div>
+                    <p>Shorts</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/subscription-icon.png" alt="">
+                    </div>
+                    <p>Subscription</p>
+                </div>
+            </div>
+
+
+            <div class="menu-box-2">
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/library-icon.png" alt="" class="library-icon">
+                    </div>
+                    <p>Library</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/history-icon.png" alt="">
+                    </div>
+                    <p>History</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/your-videos-icon.png" alt="" class="your-videos-icon">
+                    </div>
+                    <p>Your videos</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/watch-later-icon.png" alt="">
+                    </div>
+                    <p>Watch later</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/playlist-icon.png" alt="">
+                    </div>
+                    <p>Coding</p>
+                </div>
+
+
+                <div class="menu-box-extra">
+                    <div class="menu__item">
+                        <div class="img-box flex-center">
+                            <img src="./youtube-img/liked-icon.png" alt="">
+                        </div>
+                        <p>Liked videos</p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="img-box flex-center">
+                            <img src="./youtube-img/playlist-icon.png" alt="">
+                        </div>
+                        <p>Leetcode Solutions</p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="img-box flex-center">
+                            <img src="./youtube-img/playlist-icon.png" alt="">
+                        </div>
+                        <p>Bootsrap 5 Project...</p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="img-box flex-center">
+                            <img src="./youtube-img/playlist-icon.png" alt="">
+                        </div>
+                        <p>Favourite songs</p>
+                    </div>
+                </div>
+                <div class="menu__item show-more">
+                    <div class="img-box flex-center">
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <p>Show more</p>
+                </div>
+            </div>
+
+
+
+            <div class="menu-box-3">
+                <h3>Subscriptions</h3>
+                <div class="menu__item notification">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/profile-pic-1.jpg" alt="" class="profile-img">
+                    </div>
+                    <p>Easy Tutorials</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/profile-pic-2.jpg" alt="" class="profile-img">
+                    </div>
+                    <p>Dhruv Rathee</p>
+                </div>
+                <div class="menu__item notification">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/profile-pic-3.jpg" alt="" class="profile-img">
+                    </div>
+                    <p>Open Letter</p>
+                </div>
+                <div class="menu__item notification">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/profile-pic-4.jpg" alt="" class="profile-img">
+                    </div>
+                    <p>Comicverse</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/profile-pic-5.jpg" alt="" class="profile-img">
+                    </div>
+                    <p>Abhi and Niyu</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/profile-pic-6.jpg" alt="" class="profile-img">
+                    </div>
+                    <p>PJ Explained</p>
+                </div>
+                <div class="menu__item notification">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/profile-pic-15.jpg" alt="" class="profile-img">
+                    </div>
+                    <p>The School of Life</p>
+                </div>
+
+                <div class="menu-box-extra">
+                    <div class="menu__item">
+                        <div class="img-box flex-center">
+                            <img src="./youtube-img/profile-pic-8.jpg" alt="" class="profile-img">
+                        </div>
+                        <p>BB Ki Vines</p>
+                    </div>
+                    <div class="menu__item notification">
+                        <div class="img-box flex-center">
+                            <img src="./youtube-img/profile-pic-9.jpg" alt="" class="profile-img">
+                        </div>
+                        <p>freeCodeCamp.o...</p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="img-box flex-center">
+                            <img src="./youtube-img/profile-pic-16.jpg" alt="" class="profile-img">
+                        </div>
+                        <p>BnfTV</p>
+                    </div>
+                    <div class="menu__item notification">
+                        <div class="img-box flex-center">
+                            <img src="./youtube-img/profile-pic-10.jpg" alt="" class="profile-img">
+                        </div>
+                        <p>Marvel Entertain...</p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="img-box flex-center">
+                            <img src="./youtube-img/profile-pic-7.jpg" alt="" class="profile-img">
+                        </div>
+                        <p>The Deshbhakt</p>
+                    </div>
+                    <div class="menu__item notification">
+                        <div class="img-box flex-center">
+                            <img src="./youtube-img/profile-pic-11.jpg" alt="" class="profile-img">
+                        </div>
+                        <p>CodeWithHarry</p>
+                    </div>
+                    <div class="menu__item notification">
+                        <div class="img-box flex-center">
+                            <img src="./youtube-img/profile-pic-12.jpg" alt="" class="profile-img">
+                        </div>
+                        <p>Nitish Rajput</p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="img-box flex-center">
+                            <img src="./youtube-img/profile-pic-13.jpg" alt="" class="profile-img">
+                        </div>
+                        <p>The Screen Patti</p>
+                    </div>
+                    <div class="menu__item notification">
+                        <div class="img-box flex-center">
+                            <img src="./youtube-img/profile-pic-14.jpg" alt="" class="profile-img">
+                        </div>
+                        <p>Trakin Tech</p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="img-box add flex-center">
+                            <i class="ri-add-fill"></i>
+                        </div>
+                        <p>Browse Channel</p>
+                    </div>
+                </div>
+
+                <div class="menu__item show-more">
+                    <div class="img-box flex-center">
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <p>Show more</p>
+                </div>
+
+            </div>
+
+
+            <div class="menu-box-4">
+                <h3>Explore</h3>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/trending-icon.png" alt="">
+                    </div>
+                    <p>Trending</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/shopping-icon.png" alt="">
+                    </div>
+                    <p>Shpping</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/music-icon.png" alt="">
+                    </div>
+                    <p>Music</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/movies-icon.png" alt="">
+                    </div>
+                    <p>Movies</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/live-icon.png" alt="">
+                    </div>
+                    <p>Live</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/gaming-icon.png" alt="">
+                    </div>
+                    <p>Gaming</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/news-icon.png" alt="">
+                    </div>
+                    <p>News</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/sports-icon.png" alt="">
+                    </div>
+                    <p>Sports</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/learning-icon.png" alt="">
+                    </div>
+                    <p>Learning</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/fashion-icon.png" alt="">
+                    </div>
+                    <p>Fashion & beauty</p>
+                </div>
+
+            </div>
+
+            <div class="menu-box-5">
+                <h3>More from YouTube</h3>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/yt-premium-icon.png" alt="">
+                    </div>
+                    <p>Youtube Premium</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/yt-studio-icon.png" alt="">
+                    </div>
+                    <p>Youtube Studio</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/yt-music-icon.png" alt="">
+                    </div>
+                    <p>Youtube Music</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/yt-kids-icon.png" alt="">
+                    </div>
+                    <p>Youtube Kids</p>
+                </div>
+
+            </div>
+
+            <div class="menu-box-6">
+                <h3>More from YouTube</h3>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/settings-icon.png" alt="" class="settings">
+                    </div>
+                    <p>Settings</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/report-icon.png" alt="">
+                    </div>
+                    <p>Report history</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/help-icon.png" alt="">
+                    </div>
+                    <p>Help</p>
+                </div>
+                <div class="menu__item">
+                    <div class="img-box flex-center">
+                        <img src="./youtube-img/feedback-icon.png" alt="">
+                    </div>
+                    <p>Send Feedback</p>
+                </div>
+
+            </div>
+
+            <div class="menu-box-7">
+                <div>
+                    <a href="#">About</a>
+                    <a href="#">Press</a>
+                    <a href="#">Copyright</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Creators</a>
+                    <a href="#">Advertise</a>
+                    <a href="#">Developers</a>
+                </div>
+
+                <div>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Policy & Safety</a>
+                    <a href="#">How YouTube works</a>
+                    <a href="#">Test new features</a>
+                </div>
+
+                <p>© 2023 Google LLC</p>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="category-bar" id="category-bar">
+        <p class="category active">All</p>
+        <p class="category">Music</p>
+        <p class="category">Mixes</p>
+        <p class="category">React Routers</p>
+        <p class="category">Javascript</p>
+        <p class="category">Live</p>
+        <p class="category">Python</p>
+        <p class="category">Lo-fi</p>
+        <p class="category">History</p>
+        <p class="category">AI</p>
+        <p class="category">Bollywood music</p>
+        <p class="category">Gadgets</p>
+        <p class="category">3D computer graphics</p>
+        <p class="category">Comedy</p>
+        <p class="category">Pop Music</p>
+        <p class="category">New to you</p>
+    </div>
+    <main class="main__content" id="main-content">
+
+        <div class="videos__content">
+
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-1.webp" alt="">
+                    <div class="time-tag">19:42</div>
+                </div>
+
+                <div class="title">
+                    <img src="./youtube-img/thumbnail-1-profile.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>PAPER LEAK SCAM 🔥 किसने किया GOVT. EXAM LEAK ?</h2>
+                        <div class="name">Aditya Saini <i class="ri-checkbox-circle-fill"></i></div>
+                        <div class="views__count">
+                            <p class="views">35k views</p>
+                            <div class="dot"></div>
+                            <p class="time">11 hours ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+
+            </div>
+
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-2.webp" alt="">
+                    <div class="time-tag">3:25</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/profile-pic-10.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>Marvel’s Spider-Man 2 | Gameplay Reveal</h2>
+                        <div class="name">Marvel Entertainment<i class="ri-checkbox-circle-fill"></i></div>
+                        <div class="views__count">
+                            <p class="views">8M views</p>
+                            <div class="dot"></div>
+                            <p class="time">2 days ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+
+            </div>
+
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-3.webp" alt="">
+                    <div class="time-tag">13:18</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/thumbnail-3-profile.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>React Developer: this is for you!! | Tanay Pratap Hindi</h2>
+                        <div class="name">Tanay Pratap</div>
+                        <div class="views__count">
+                            <p class="views">110k views</p>
+                            <div class="dot"></div>
+                            <p class="time">2 months ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-4.webp" alt="">
+                    <div class="time-tag">17:04</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/thumbnail-4-profile.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>Dhamaka in a Nutshell || Yogi Baba</h2>
+                        <div class="name">Yogi Baba<i class="ri-checkbox-circle-fill"></i></div>
+                        <div class="views__count">
+                            <p class="views">390k views</p>
+                            <div class="dot"></div>
+                            <p class="time">3 months ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-5.webp" alt="">
+                    <div class="time-tag">21:37</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/thumbnail-5-profile.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>What is wrong with Indian liberals?</h2>
+                        <div class="name">Soch by Mohak Mangel<i class="ri-checkbox-circle-fill"></i></div>
+                        <div class="views__count">
+                            <p class="views">1.2M views</p>
+                            <div class="dot"></div>
+                            <p class="time">2 months ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-6.webp" alt="">
+                    <div class="time-tag">8:35</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/profile-pic-8.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>99 Rupay mei 200 calls | Ghaplebaaz ko Pakdo | BB Ki Vines</h2>
+                        <div class="name">BB Ki Vines<i class="ri-checkbox-circle-fill"></i></div>
+                        <div class="views__count">
+                            <p class="views">56M views</p>
+                            <div class="dot"></div>
+                            <p class="time">5 years ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-8.webp" alt="">
+                    <div class="time-tag">12:52</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/profile-pic-3.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>The Reality of Biggest IPL SCAM in India | Open Letter</h2>
+                        <div class="name">Open Letter<i class="ri-checkbox-circle-fill"></i></div>
+                        <div class="views__count">
+                            <p class="views">331K views</p>
+                            <div class="dot"></div>
+                            <p class="time">1 month ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-7.webp" alt="">
+                    <div class="time-tag">23:22</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/profile-pic-2.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>Theory of Evolution | Fact vs Fiction | How Life Originated on Earth?...</h2>
+                        <div class="name">Dhruv Rathee<i class="ri-checkbox-circle-fill"></i></div>
+                        <div class="views__count">
+                            <p class="views">4.4M views</p>
+                            <div class="dot"></div>
+                            <p class="time">2 weeks ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-9.webp" alt="">
+                    <div class="time-tag">6:40</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/thumbnail-9-profile.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>Tere Hawaale (Full Video) Laal Singh Chaddha | Aamir,Kareena | Arijit,Shilp...</h2>
+                        <div class="name">T-Series<i class="ri-checkbox-circle-fill"></i></div>
+                        <div class="views__count">
+                            <p class="views">30M views</p>
+                            <div class="dot"></div>
+                            <p class="time">6 months ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-10.webp" alt="">
+                    <div class="time-tag">6:32</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/profile-pic-6.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>India's True Masala Masterpiece (Ye Hai Asli Indian Cinema) ⋮ RRR</h2>
+                        <div class="name">PJ Explained<i class="ri-checkbox-circle-fill"></i></div>
+                        <div class="views__count">
+                            <p class="views">546K views</p>
+                            <div class="dot"></div>
+                            <p class="time">1 year ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-11.webp" alt="">
+                    <div class="time-tag">14:07</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/thumbnail-11-profile.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>Why RUSSIA Betrayed INDIA To Support China? Russia's Pro-China...</h2>
+                        <div class="name">Gaurav Thakur<i class="ri-checkbox-circle-fill"></i></div>
+                        <div class="views__count">
+                            <p class="views">180K views</p>
+                            <div class="dot"></div>
+                            <p class="time">14 hours ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-12.webp" alt="">
+                    <div class="time-tag">10:23</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/thumbnail-12-profile.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>Top 5 Frontend Projects with Resources to get placement | Project...</h2>
+                        <div class="name">Anshika Gupta</div>
+                        <div class="views__count">
+                            <p class="views">301K views</p>
+                            <div class="dot"></div>
+                            <p class="time">5 month ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-13.webp" alt="">
+                    <div class="time-tag">8:22</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/thumbnail-13-profile.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>FUTURE of Jobs: This report can change your career!</h2>
+                        <div class="name">Sarthak Goswami</div>
+                        <div class="views__count">
+                            <p class="views">92K views</p>
+                            <div class="dot"></div>
+                            <p class="time">16 hours ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-14.webp" alt="">
+                    <div class="time-tag">15:13</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/thumbnail-14-profile.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>18 Hero Section Designs You Can Steal</h2>
+                        <div class="name">Payton Clark Smith</div>
+                        <div class="views__count">
+                            <p class="views">316K views</p>
+                            <div class="dot"></div>
+                            <p class="time">9 months ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-15.webp" alt="">
+                    <div class="time-tag">27:17</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/profile-pic-12.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>Israeli–Palestinian conflict | Nitish Rajput | Hindi</h2>
+                        <div class="name">Nitish Rajput</div>
+                        <div class="views__count">
+                            <p class="views">1.9M views</p>
+                            <div class="dot"></div>
+                            <p class="time">1 month ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-16.webp" alt="">
+                    <div class="time-tag">3:03</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/thumbnail-16-profile.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>OPPENHEIMER - New Hindi Trailer (Universal Pictures) - HD</h2>
+                        <div class="name">Universal Pictures India</div>
+                        <div class="views__count">
+                            <p class="views">1M views</p>
+                            <div class="dot"></div>
+                            <p class="time">2 weeks ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-17.webp" alt="">
+                    <div class="time-tag">13:47</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/thumbnail-17-profile.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>How to MASTER Data Structures & Algorithms FAST in 2023</h2>
+                        <div class="name">Internet Made Coder</div>
+                        <div class="views__count">
+                            <p class="views">8.2K views</p>
+                            <div class="dot"></div>
+                            <p class="time">2 days ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+            <div class="video-box">
+                <div class="thumbnail">
+                    <img src="./youtube-img/thumbnail-18.webp" alt="">
+                    <div class="time-tag">3:25</div>
+                </div>
+                <div class="title">
+                    <img src="./youtube-img/profile-pic-10.jpg" alt="">
+                    <div class="channel__data">
+                        <h2>Marvel Studios' Avengers: Endgame - Official Trailer</h2>
+                        <div class="name">Marvel Entertainment</div>
+                        <div class="views__count">
+                            <p class="views">155M views</p>
+                            <div class="dot"></div>
+                            <p class="time">4 years ago</p>
+                        </div>
+                    </div>
+                    <i class="ri-more-2-line more"></i>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+</body>
+
+</html>
