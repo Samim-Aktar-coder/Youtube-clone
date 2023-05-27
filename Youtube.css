@@ -605,6 +605,11 @@ body {
         display: none;
     }
 
+    .menu-bar {
+        display: none;
+    }
+
+
     .category-bar {
         left: 5rem;
     }
@@ -667,9 +672,7 @@ body {
 }
 
 @media screen and (max-width:800px) {
-    .menu-bar {
-        display: none;
-    }
+
 
     .search__container {
         display: none;
